@@ -25,15 +25,15 @@ class JobsController < ApplicationController
   end
 
   def edit
-    # implement on your own!
+    @job = Job.find(params[:id])
   end
 
   def update
-    # implement on your own!
+    @job = Job.find(params[:id]).update(job_params)
   end
 
   def destroy
-    # implement on your own!
+    Job.destroy(params[:id])
   end
 
   private
