@@ -1,5 +1,15 @@
 Rails.application.routes.draw do
 
+  get 'categories/show'
+
+  get 'categories/edit'
+
+  get 'categories/index'
+
+  get 'categories/new'
+
+  resources :categories
+
   resources :companies do
     resources :jobs
   end
