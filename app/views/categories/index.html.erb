@@ -4,7 +4,7 @@
   <ul>
     <%= link_to category.title, category_path(category) %><br>
     <%= link_to "Edit", edit_category_path(category) %>
-    <%= link_to "Delete", category.destroy %>
+    <%= link_to "Delete", category_path(category), method: "delete" %>
   </ul>
 <% end %>
 
